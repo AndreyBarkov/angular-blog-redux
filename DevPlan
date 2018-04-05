@@ -1,0 +1,11 @@
+Angular blog app
+
+    - Single Post
+    - Feed
+        - Redux setup
+    - Login Page
+        - Add, Edit, Delete, buttons
+        - Add, Edit components
+        - Actions and Reducers
+        
+
