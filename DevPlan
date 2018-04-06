@@ -2,7 +2,7 @@ Angular blog app
 
     - Single Post
     - Feed
-        - Redux setup
+        - Redux setup -check
     - Login Page
         - Add, Edit, Delete, buttons
         - Add, Edit components

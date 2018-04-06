@@ -1,0 +1,13 @@
+<div>
+  <form #form="ngForm" (submit)="submitForm(form)">
+    <div class="form-group">
+      <label class="control-label">Title</label>
+      <input class="form-control" #postTitle="ngModel" type="text" name="title" placeholder="Title" [(ngModel)]="model.title" />
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" rows="5" #postText="ngModel" name="text" placeholder="post text" [(ngModel)]="model.text"></textarea>
+    </div>
+    <button class="btn btn-success" type="submit">POST</button>
+  </form>
+</div>
+{{model | json}}

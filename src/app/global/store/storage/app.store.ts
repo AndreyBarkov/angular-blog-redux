@@ -1,8 +1,10 @@
 import { Post } from '../../../models/post';
+import { PostState } from '../reducers/postReducer';
+import { AuthState } from '../reducers/authReducer';
 
-export interface AppState {
-    posts: Post[];
-    isLoggedIn: boolean;
+export interface State {
+    post: PostState;
+    auth: AuthState;
 }
 
 export const getInitialState = () => {
@@ -21,6 +23,5 @@ export const getInitialState = () => {
                 datePosted: 'Today 12:00PM',
             }
         ],
-        isLoggedIn: false
     };
 };

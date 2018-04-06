@@ -1,3 +1,8 @@
-<p>
-  post works! {{post.title}}
-</p>
+<h1><a routerLink="/post/{{post.id}}">{{post.title}}</a></h1>
+<p [innerHtml]="post.text"></p>
+<p>Posted On: {{post.datePosted}}</p>
+<p>ID: {{post.id}}</p>
+<a routerLink="/edit/{{post.id}}">Edit</a>
+<br/>
+<br/>
+<button (click)="deletePost(post.id)">Delete</button>
